@@ -1,0 +1,32 @@
+#CADASTRA UM USUARIO
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "name": "Categoria 11"
+}
+
+###
+
+#CONSULTA USUARIOS
+GET http://localhost:3000/categories
+
+###
+
+#CCONSULTA UM USUARIO ID 10
+GET http://localhost:3000/categories/10
+
+###
+
+#ATUALIZA UM USUARIO ID 2
+PUT http://localhost:3000/categories/2
+Content-Type: application/json
+
+{
+    "name": "Categoria 2 - Alterada"
+}
+
+###
+
+#DELETA O USUARIO DE ID 1
+DELETE http://localhost:3000/categories/1

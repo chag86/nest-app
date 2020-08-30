@@ -1,0 +1,34 @@
+#CADASTRA UM USUARIO
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Rodrigo Miranda",
+    "email": "rrodrigocmiranda@gmail.com"
+}
+
+###
+
+#CONSULTA USUARIOS
+GET http://localhost:3000/users
+
+###
+
+#CCONSULTA UM USUARIO ID 10
+GET http://localhost:3000/users/10
+
+###
+
+#ATUALIZA UM USUARIO ID 2
+PUT http://localhost:3000/users/2
+Content-Type: application/json
+
+{
+    "name": "Rodrigo C. de Miranda",
+    "email": "rrodrigocmiranda@gmail.com"
+}
+
+###
+
+#DELETA O USUARIO DE ID 1
+DELETE http://localhost:3000/users/2
